@@ -1,0 +1,10 @@
+﻿akka {  
+    actor.provider = "Akka.Remote.RemoteActorRefProvider, Akka.Remote"
+	suppress-json-serializer-warning=on
+    remote {
+        helios.tcp {
+		    port = 8090
+		    hostname = localhost
+        }
+    }
+}

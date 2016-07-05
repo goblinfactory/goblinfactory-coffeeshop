@@ -1,0 +1,14 @@
+﻿akka {  
+	actor{
+		provider = "Akka.Remote.RemoteActorRefProvider, Akka.Remote"
+		deployment {
+			/barista { remote = "akka.tcp://coffeeclient@localhost:8090" }
+		}
+	}
+	remote {
+		helios.tcp {
+			port = 0
+			hostname = localhost
+		}
+	}
+}
